@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply mt-1 block w-full text-black focus:border-primary focus:ring-primary;
+  }
+  [type="checkbox"],
+  [type="radio"] {
+    @apply text-primary focus:ring-primary;
+  }
+  /* @font-face {
+    font-family: "CiscoSansTTRegular";
+    src: url("/src/assets/fonts/CiscoSansTTRegular.woff2") format("woff2");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "CiscoSansTTBold";
+    src: url("/src/assets/fonts/CiscoSansTTBold.woff2") format("woff2");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "CiscoSansTTLight";
+    src: url("/src/assets/fonts/CiscoSansTTLight.woff2") format("woff2");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "CiscoSansTTExtraLight";
+    src: url("/src/assets/fonts/CiscoSansTTExtraLight.woff2") format("woff2");
+    font-weight: normal;
+  } */
+  /* body {
+    font-family: CiscoSans, Arial, sans-serif;
+  } */
+}
+
+/* ==========================================================================
+   * Defaults
+   ========================================================================== */
+
+/*
+   * Variables
+   ========================================================================== */
+
+:root {
+  --color-primary: #be3455;
+  --color-primary: 190 52 85;
+  --color-secondary: #e2d6bf;
+  --color-secondary: 226 214 191;
+  --color-accent: #a31e24;
+  --color-accent: 163 30 36;
+  --color-text: #294031;
+  --color-text: 41 64 49;
+}
+
+p span {
+  @apply bg-secondary py-px px-0.5 font-semibold text-primary;
+}

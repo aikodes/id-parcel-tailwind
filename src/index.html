@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcel + Tailwind Starter</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body class="bg-primary/5 text-text">
+    <include src="./includes/inc-menu.html"></include>
+    <section class="bg-confetti-animated bg-primary p-8 text-white">
+      <div class="text-6xl">🎉</div>
+      <p class="mt-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id rerum
+        laudantium blanditiis quidem natus voluptatibus architecto, accusamus
+        aut sequi laboriosam pariatur debitis dolorem cum, distinctio eligendi
+        neque amet ex <span>beatae</span>?
+      </p>
+      <!-- Before -->
+      <button
+        class="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3"
+      >
+        ...
+      </button>
+    </section>
+    <main class="container p-6">
+      <h1 class="text-sm font-bold uppercase tracking-wider text-primary/80">
+        👋🏼 안녕하세요!
+      </h1>
+      <h2 class="text-xl text-primary">How's it <span>going</span>?</h2>
+      <p class="">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+        perspiciatis consectetur et repudiandae soluta sint inventore,
+        provident, commodi necessitatibus, quos quo veritatis? Temporibus autem
+        sit, asperiores eos officia harum iure.
+      </p>
+      <section class="py-16">
+        <h2 class="text-2xl font-bold">Forms</h2>
+        <form class="mt-8 max-w-md" id="form">
+          <div class="grid grid-cols-1 gap-6">
+            <label class="block">
+              <span class="text-gray-700">Full name</span>
+              <input
+                type="text"
+                class="mt-1 block w-full"
+                placeholder=""
+                name="fullname"
+              />
+            </label>
+            <label class="block">
+              <span class="text-gray-700">Email address</span>
+              <input
+                type="email"
+                class="mt-1 block w-full"
+                placeholder="john@example.com"
+                name="email"
+              />
+            </label>
+            <label class="block">
+              <span class="text-gray-700">When is your event?</span>
+              <input type="date" class="mt-1 block w-full" name="date" />
+            </label>
+            <label class="block">
+              <span class="text-gray-700">What type of event is it?</span>
+              <select class="mt-1 block w-full" name="eventtype">
+                <option value="corporate">Corporate event</option>
+                <option value="wedding">Wedding</option>
+                <option value="birthday">Birthday</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="text-gray-700">Additional details</span>
+              <textarea class="mt-1 block w-full" rows="3"></textarea>
+            </label>
+            <fieldset class="block">
+              <legend class="text-gray-700">
+                Which radio button do you like?
+              </legend>
+              <div class="mt-2">
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="radio" checked name="radio-direct" value="1" />
+                    <span class="ml-2">Option 1</span>
+                  </label>
+                </div>
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="radio" name="radio-direct" value="2" />
+                    <span class="ml-2">Option 2</span>
+                  </label>
+                </div>
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="radio" name="radio-direct" value="3" />
+                    <span class="ml-2">Option 3</span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="block">
+              <div class="mt-2">
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="checkbox" checked="" name="allowemail" />
+                    <span class="ml-2">Email me news and special offers</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="inline-flex justify-center rounded-sm border border-transparent bg-primary py-2 px-4 font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section>
+        <h2 class="text-primary">Typography</h2>
+        <article class="prose prose-zinc lg:prose-xl">
+          <h1>Garlic bread with cheese: What the science tells us</h1>
+          <p>
+            For years parents have espoused the health benefits of eating garlic
+            bread with cheese to their children, with the food earning such an
+            iconic status in our culture that kids will often dress up as warm,
+            cheesy loaf for Halloween.
+          </p>
+          <p>
+            But a recent study shows that the celebrated appetizer may be linked
+            to a series of rabies cases springing up around the country.
+          </p>
+          <!-- ... -->
+        </article>
+      </section>
+      <section class="py-16">
+        <h2>Aspect Ratio</h2>
+        <h3>Using TW Plugin: @tailwindcss/aspect-ratio</h3>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h3>Using TW default Aspect Ratio</h3>
+        <iframe
+          class="aspect-video w-full"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <hr />
+        <img
+          class="aspect-video w-full"
+          src="https://via.placeholder.com/400x300"
+          alt=""
+        />
+      </section>
+      <section>
+        <h2>@tailwindcss/container-queries</h2>
+        <div class="@container">
+          <div class="@lg:underline">
+            <h3>
+              This text will be underlined when the container is larger than
+              `32rem`
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              quod reiciendis debitis esse velit ullam illum dicta eius ab sit
+              modi maxime rerum, minus similique dignissimos at soluta magnam
+              deleniti.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
