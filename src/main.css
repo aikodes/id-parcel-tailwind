@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./includes/bg-confetti-animated.css";
 
 @layer base {
   [type="text"],
@@ -68,6 +69,16 @@
   --color-text: 41 64 49;
 }
 
+/* ==========================================================================
+   * Custom
+   ========================================================================== */
+
+body {
+  &.is-locked {
+    @apply !fixed min-h-full w-full overflow-visible;
+  }
+}
+
 p span {
-  @apply bg-secondary py-px px-0.5 font-semibold text-primary;
+  @apply bg-secondary px-0.5 font-semibold text-primary;
 }

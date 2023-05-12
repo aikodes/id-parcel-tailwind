@@ -6,25 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parcel + Tailwind Starter</title>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+    <script type="module" src="./app.js"></script>
   </head>
   <body class="bg-primary/5 text-text">
     <include src="./includes/inc-menu.html"></include>
     <section class="bg-confetti-animated bg-primary p-8 text-white">
       <div class="text-6xl">🎉</div>
       <p class="mt-4">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id rerum
         laudantium blanditiis quidem natus voluptatibus architecto, accusamus
-        aut sequi laboriosam pariatur debitis dolorem cum, distinctio eligendi
-        neque amet ex <span>beatae</span>?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id rerum aut
+        sequi <span>laboriosam</span> pariatur debitis dolorem cum, distinctio
+        eligendi neque amet ex beatae?
       </p>
-      <!-- Before -->
-      <button
-        class="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3"
-      >
-        ...
-      </button>
     </section>
     <main class="container p-6">
       <h1 class="text-sm font-bold uppercase tracking-wider text-primary/80">
@@ -115,7 +109,7 @@
             <div>
               <button
                 type="submit"
-                class="inline-flex justify-center rounded-sm border border-transparent bg-primary py-2 px-4 font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                class="inline-flex justify-center rounded-sm border border-transparent bg-primary px-4 py-2 font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               >
                 Save
               </button>
@@ -140,9 +134,11 @@
           <!-- ... -->
         </article>
       </section>
-      <section class="py-16">
+      <section class="space-y-4 py-16">
         <h2>Aspect Ratio</h2>
-        <h3>Using TW Plugin: @tailwindcss/aspect-ratio</h3>
+        <h3 class="inline-block bg-primary/10 px-1">
+          @tailwindcss/aspect-ratio
+        </h3>
         <div class="aspect-w-16 aspect-h-9">
           <iframe
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -151,7 +147,9 @@
             allowfullscreen
           ></iframe>
         </div>
-        <h3>Using TW default Aspect Ratio</h3>
+        <h3 class="inline-block bg-primary/10 px-1">
+          Tailwind's default Aspect Ratio
+        </h3>
         <iframe
           class="aspect-video w-full"
           src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -161,13 +159,16 @@
         ></iframe>
         <hr />
         <img
-          class="aspect-video w-full"
+          class="aspect-video w-full object-cover"
           src="https://via.placeholder.com/400x300"
           alt=""
         />
       </section>
       <section>
-        <h2>@tailwindcss/container-queries</h2>
+        <h2>Container Queries</h2>
+        <h3 class="inline-block bg-primary/10 px-1">
+          @tailwindcss/container-queries
+        </h3>
         <div class="@container">
           <div class="@lg:underline">
             <h3>
